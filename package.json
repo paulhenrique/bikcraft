@@ -1,0 +1,28 @@
+{
+  "name": "bikcraft",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido no curso de Web Design Completo da plataforma Origamid",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulhenrique/bikcraft.git"
+  },
+  "keywords": [
+    "origamid",
+    "bikcraft",
+    "html",
+    "front-end"
+  ],
+  "author": "Paulo Henrique Vieira Cândido",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulhenrique/bikcraft/issues"
+  },
+  "homepage": "https://github.com/paulhenrique/bikcraft#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
