@@ -126,3 +126,36 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+:root {
+  --color-yellow: #fec63e;
+  --color-black: #000;
+  --color-white: #fff; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+header {
+  position: fixed;
+  background: var(--color-yellow);
+  width: 100%;
+  padding: 1rem 0; }
+  header a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px; }
+    header a:hover {
+      color: var(--color-white); }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container nav ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px; }
