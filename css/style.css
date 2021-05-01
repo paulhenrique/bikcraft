@@ -127,17 +127,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0; }
+
 :root {
   --color-yellow: #fec63e;
   --color-black: #000;
   --color-white: #fff; }
 
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
 .container {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 14px; }
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   background: var(--color-yellow);
   width: 100%;
   padding: 1rem 0; }
@@ -159,3 +173,66 @@ header {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 20px; }
+
+.introduction {
+  width: 100%;
+  background: url("/img/bg.jpg");
+  min-height: 380px;
+  background-size: cover;
+  margin-top: 96px;
+  padding-top: 120px; }
+  .introduction .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .introduction .container h1 {
+      font-size: 48px;
+      color: var(--color-white);
+      font-weight: bold;
+      text-transform: uppercase; }
+    .introduction .container blockquote {
+      width: 360px;
+      font-weight: bold;
+      color: var(--color-white);
+      text-align: center;
+      margin-bottom: 50px; }
+      .introduction .container blockquote p {
+        font-style: italic;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .introduction .container blockquote p:before, .introduction .container blockquote p:after {
+          content: "";
+          width: 60px;
+          height: 3px;
+          margin: auto;
+          background: var(--color-white);
+          top: 0;
+          margin: 15px auto; }
+        .introduction .container blockquote p:after {
+          top: 100%; }
+      .introduction .container blockquote cite {
+        display: block;
+        letter-spacing: .1em;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif; }
+
+.btn {
+  color: var(--color-yellow);
+  border: 3px solid var(--color-yellow);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em; }
+  .btn:hover {
+    background: var(--color-yellow);
+    color: var(--color-white); }

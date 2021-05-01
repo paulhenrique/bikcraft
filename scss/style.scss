@@ -1,5 +1,12 @@
 @import '../node_modules/normalize.css/normalize.css';
-@import './_reset.scss';
+@import './_reset';
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
 
 :root {
   --color-yellow: #fec63e;
@@ -7,40 +14,46 @@
   --color-white: #fff;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+  font-size: 14px;
 }
 
-header {
-  position: fixed;
-  background: var(--color-yellow);
-  width: 100%;
-  padding: 1rem 0;
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-  a {
-    color: var(--color-black);
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-size: 14px;
 
-    &:hover {
-      color: var(--color-white);
-    }
-  }
+@mixin centerColumnFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    nav ul {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 20px;
-    }
+@import './header';
+@import './introduction';
+
+
+.btn {
+  color: var(--color-yellow);
+  border: 3px solid var(--color-yellow);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+  &:hover {
+    background: var(--color-yellow);
+    color: var(--color-white);
   }
 }
