@@ -8,6 +8,7 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .1em;
+  transition: background .25s, color .25s;
 
   &:hover {
     background: var(--color-yellow);

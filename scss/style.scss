@@ -67,3 +67,52 @@ p {
 @import './products';
 @import './callToAction';
 @import './portfolio';
+
+.qualidade {
+  .container {
+    width: 100%;
+
+    h2 {
+      @include titleText(var(--color-black));
+    }
+
+    .containerDif {
+      width: 100%;
+      text-align: center;
+
+      img {
+        position: relative;
+
+        &:before {
+          content: "";
+          height: 2px;
+          background-color: var(--color-black);
+          width: 50%;
+          position: absolute;
+        }
+      }
+
+      .columns {
+        display: flex;
+        justify-content: space-around;
+
+        h3 {
+          @include titleText(var(--color-black));
+          font-size: 18px;
+
+          &:after {
+            margin-bottom: 10px;
+          }
+        }
+
+        p {
+          max-width: 230px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    @include centerColumnFlex;
+  }
+}

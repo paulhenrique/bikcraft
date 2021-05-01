@@ -233,7 +233,8 @@ header {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  transition: background .25s, color .25s; }
   .btn:hover {
     background: var(--color-yellow);
     color: var(--color-white); }
@@ -364,3 +365,75 @@ header {
         grid-area: pict1; }
       .portfolio .container .containerPictures img:nth-child(2) {
         grid-area: pict2; }
+
+.qualidade .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .qualidade .container h2 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: 65px;
+    position: relative;
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .qualidade .container h2:after {
+      content: "";
+      bottom: 0;
+      width: 60px;
+      height: 3px;
+      margin: 10px auto;
+      background: var(--color-black);
+      margin-bottom: 40px; }
+  .qualidade .container .containerDif {
+    width: 100%;
+    text-align: center; }
+    .qualidade .container .containerDif img {
+      position: relative; }
+      .qualidade .container .containerDif img:before {
+        content: "";
+        height: 2px;
+        background-color: var(--color-black);
+        width: 50%;
+        position: absolute; }
+    .qualidade .container .containerDif .columns {
+      display: flex;
+      justify-content: space-around; }
+      .qualidade .container .containerDif .columns h3 {
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-align: center;
+        margin-top: 65px;
+        position: relative;
+        color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px; }
+        .qualidade .container .containerDif .columns h3:after {
+          content: "";
+          bottom: 0;
+          width: 60px;
+          height: 3px;
+          margin: 10px auto;
+          background: var(--color-black);
+          margin-bottom: 40px; }
+        .qualidade .container .containerDif .columns h3:after {
+          margin-bottom: 10px; }
+      .qualidade .container .containerDif .columns p {
+        max-width: 230px;
+        font-size: 14px;
+        line-height: 20px; }
