@@ -193,36 +193,6 @@ header {
       color: var(--color-white);
       font-weight: bold;
       text-transform: uppercase; }
-    .introduction .container blockquote {
-      width: 360px;
-      font-weight: bold;
-      color: var(--color-white);
-      text-align: center;
-      margin-bottom: 40px; }
-      .introduction .container blockquote p {
-        font-style: italic;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        .introduction .container blockquote p:before, .introduction .container blockquote p:after {
-          content: "";
-          width: 60px;
-          height: 3px;
-          margin: auto;
-          background: var(--color-white);
-          top: 0;
-          margin: 15px auto; }
-        .introduction .container blockquote p:after {
-          top: 100%; }
-      .introduction .container blockquote cite {
-        display: block;
-        letter-spacing: .1em;
-        font-style: normal;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif; }
 
 .btn {
   color: var(--color-yellow);
@@ -465,3 +435,43 @@ header {
         max-width: 230px;
         font-size: 14px;
         line-height: 20px; }
+
+blockquote {
+  width: 360px;
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 40px; }
+  blockquote p {
+    font-style: italic;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    blockquote p:before, blockquote p:after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      margin: auto;
+      background: var(--color-white);
+      top: 0;
+      margin: 15px auto; }
+    blockquote p:after {
+      top: 100%; }
+  blockquote cite {
+    display: block;
+    letter-spacing: .1em;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.institucional {
+  background: url(/img/bg-footer.jpg);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; }

@@ -1,0 +1,101 @@
+.qualidade {
+  .container {
+    width: 100%;
+
+    h2 {
+      @include titleText(var(--color-black));
+    }
+
+    .containerDif {
+      width: 100%;
+      text-align: center;
+
+      img {
+        position: relative;
+
+        &:before {
+          content: "";
+          height: 2px;
+          background-color: var(--color-black);
+          width: 50%;
+          position: absolute;
+        }
+      }
+
+      .columns {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+
+          position: relative;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: -64px;
+            width: 220px;
+            height: 3px;
+            background: var(--color-black);
+            margin: auto;
+          }
+
+          &:nth-child(1) {
+            &:before {
+              width: 220px;
+            }
+          }
+
+          &:nth-child(2) {
+            &:before {
+              display: none;
+            }
+
+            h3 {
+              &:before {
+                top: -68px;
+                height: 60px;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            &:before {
+              left: -105px;
+              width: 220px;
+            }
+          }
+        }
+
+        h3 {
+          &:before {
+            content: "";
+            position: absolute;
+            top: -128px;
+            width: 3px;
+            height: 110px;
+            background: var(--color-black);
+            margin: auto;
+          }
+
+
+
+          @include titleText(var(--color-black));
+          font-size: 18px;
+
+          &:after {
+            margin-bottom: 10px;
+          }
+        }
+
+        p {
+          max-width: 230px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    @include centerColumnFlex;
+  }
+}

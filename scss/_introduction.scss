@@ -17,46 +17,6 @@
       text-transform: uppercase;
     }
 
-    blockquote {
-      width: 360px;
-      font-weight: bold;
-      color: var(--color-white);
 
-      text-align: center;
-
-      p {
-        font-style: italic;
-        position: relative;
-        @include centerColumnFlex;
-
-        &:before,
-        &:after {
-          content: "";
-          width: 60px;
-          height: 3px;
-          margin: auto;
-          background: var(--color-white);
-          top: 0;
-          margin: 15px auto;
-        }
-
-        &:after {
-          top: 100%;
-        }
-
-
-      }
-
-      cite {
-        display: block;
-        letter-spacing: .1em;
-        font-style: normal;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      margin-bottom: 40px;
-    }
   }
 }
