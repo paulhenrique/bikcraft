@@ -57,3 +57,94 @@ p {
     color: var(--color-white);
   }
 }
+
+.products {
+  .container {
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-align: center;
+      margin-top: 65px;
+      position: relative;
+      @include centerColumnFlex;
+
+      &:after {
+        content: "";
+        bottom: 0;
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
+        background: var(--color-black);
+        margin-bottom: 40px;
+      }
+    }
+
+    .containerProdutos {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .cardProduto {
+        a {
+          background: var(--color-black);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .textContainer {
+            text-align: center;
+            font-size: 14px;
+            background: var(--color-yellow);
+            color: var(--color-black);
+            width: 100%;
+            @include centerColumnFlex;
+            padding: 20px 0;
+
+            h3 {
+              font-weight: bold;
+              letter-spacing: .1em;
+              line-height: 25px;
+              font-size: 18px;
+              text-transform: uppercase;
+              position: relative;
+
+              @include centerColumnFlex;
+
+              &:after {
+                content: "";
+                bottom: 0;
+                width: 60px;
+                height: 3px;
+                margin: 10px auto;
+                background: var(--color-black);
+              }
+            }
+
+            p {
+              max-width: 250px;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+
+        transition: transform .25s,
+        filter .25s,
+        box-shadow .25s;
+
+        &:hover {
+          transform: translateY(-5px);
+          filter: brightness(.9);
+          box-shadow: 0px 0px 0px 2px var(--color-yellow);
+        }
+      }
+    }
+
+  }
+}
