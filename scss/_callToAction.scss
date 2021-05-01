@@ -1,0 +1,9 @@
+.callToAction {
+  width: 100%;
+  @include centerColumnFlex;
+  margin-top: 45px;
+
+  a.btn {
+    margin-top: 10px;
+  }
+}
