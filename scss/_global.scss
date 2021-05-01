@@ -1,0 +1,29 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import './_reset';
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root {
+  --color-yellow: #fec63e;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
