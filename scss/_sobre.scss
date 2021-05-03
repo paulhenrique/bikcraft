@@ -1,0 +1,61 @@
+.sobre {
+  &.introduction {
+    min-height: 0;
+    height: 155px;
+    padding-top: 0;
+    @include centerColumnFlex;
+    align-items: center;
+
+    background: url(../img/bg-sobre.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    blockquote {
+      p {
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+
+        &:before {
+          margin: 10px auto;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.historia {
+  .container {
+    padding: 62px 0;
+    display: grid;
+    grid-template: "text text""image image"/ 70% 30%;
+
+    .containerHistoria,
+    .containerValores {
+      grid-area: text;
+
+      h2 {
+        @include titleText(var(--color-black));
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 25px;
+      }
+    }
+
+    img {
+      grid-area: image;
+    }
+  }
+}
