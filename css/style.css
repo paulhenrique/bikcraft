@@ -564,41 +564,47 @@ footer {
       display: none; }
 
 .historia .container {
-  padding: 62px 0;
   display: grid;
-  grid-template: "text text" "image image"/70% 30%; }
-  .historia .container .containerHistoria,
-  .historia .container .containerValores {
-    grid-area: text; }
-    .historia .container .containerHistoria h2,
-    .historia .container .containerValores h2 {
-      font-size: 24px;
-      line-height: 30px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-align: center;
-      margin-top: 65px;
-      position: relative;
-      color: var(--color-black);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px; }
-      .historia .container .containerHistoria h2:after,
-      .historia .container .containerValores h2:after {
-        content: "";
-        bottom: 0;
-        width: 60px;
-        height: 3px;
-        margin: 10px auto;
-        background: var(--color-black);
-        margin-bottom: 40px; }
-    .historia .container .containerHistoria p,
-    .historia .container .containerValores p {
-      font-size: 18px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      line-height: 25px; }
+  grid-template: "text text" "image image"/50% 50%;
+  gap: 40px; }
+  .historia .container .containerHistoria h2,
+  .historia .container .containerValores h2 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: 65px;
+    position: relative;
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 24px; }
+    .historia .container .containerHistoria h2:after,
+    .historia .container .containerValores h2:after {
+      content: "";
+      bottom: 0;
+      width: 60px;
+      height: 3px;
+      margin: 10px auto;
+      background: var(--color-black);
+      margin-bottom: 40px; }
+    .historia .container .containerHistoria h2:after,
+    .historia .container .containerValores h2:after {
+      margin: 10px 0; }
+  .historia .container .containerHistoria p,
+  .historia .container .containerHistoria ul li,
+  .historia .container .containerValores p,
+  .historia .container .containerValores ul li {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    margin-top: 20px; }
   .historia .container img {
     grid-area: image; }
