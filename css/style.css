@@ -616,6 +616,9 @@ footer {
       margin: 10px auto; }
     .sobre.introduction blockquote p:after {
       display: none; }
+  @media (max-width: 700px) {
+    .sobre.introduction {
+      margin-top: 170px; } }
 
 .historia .container {
   display: grid;
@@ -685,6 +688,9 @@ footer {
       margin: 10px auto; }
     .produtos.introduction blockquote p:after {
       display: none; }
+  @media (max-width: 700px) {
+    .produtos.introduction {
+      margin-top: 170px; } }
 
 .produtos .container .row {
   margin-top: 30px;
@@ -843,6 +849,9 @@ footer {
       margin: 10px auto; }
     .portfolioPage.introduction blockquote p:after {
       display: none; }
+  @media (max-width: 700px) {
+    .portfolioPage.introduction {
+      margin-top: 170px; } }
 
 .portfolioPageHead {
   padding: 60px 0 60px 0;
@@ -901,3 +910,6 @@ footer {
       margin: 10px auto; }
     .contato.introduction blockquote p:after {
       display: none; }
+  @media (max-width: 700px) {
+    .contato.introduction {
+      margin-top: 170px; } }
