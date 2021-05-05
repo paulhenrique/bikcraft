@@ -12,4 +12,6 @@ if (window.SimpleSlide) {
     transition: true,
     nav: true
   });
+
+  new SimpleAnime();
 }
