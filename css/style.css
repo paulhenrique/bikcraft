@@ -483,6 +483,22 @@ blockquote {
   justify-content: center;
   align-items: center; }
 
+.containerSocialIcons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; }
+  .containerSocialIcons a {
+    border: 3px solid var(--color-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: background .25s, filter .25s; }
+    .containerSocialIcons a:hover {
+      background: var(--color-yellow); }
+      .containerSocialIcons a:hover img {
+        filter: brightness(50); }
+
 .footer {
   background: var(--color-black);
   color: var(--color-white);
@@ -522,21 +538,6 @@ blockquote {
       font-size: 14px; }
     .footer .container .historia {
       width: 400px; }
-    .footer .container .social .containerSocialIcons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px; }
-      .footer .container .social .containerSocialIcons a {
-        border: 3px solid var(--color-yellow);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        transition: background .25s, filter .25s; }
-        .footer .container .social .containerSocialIcons a:hover {
-          background: var(--color-yellow); }
-          .footer .container .social .containerSocialIcons a:hover img {
-            filter: brightness(50); }
     .footer .container .contato ul li {
       margin-bottom: 10px;
       font-family: Georgia, "Times New Roman"; }
@@ -677,9 +678,22 @@ footer {
     align-items: center; }
 
 .orcamento {
-  background: black;
+  background: var(--color-black);
   color: var(--color-yellow);
   padding-bottom: 40px; }
+  .orcamento.white {
+    --color-white: black;
+    --color-black: white; }
+  .orcamento.contato {
+    margin-top: 40px; }
+    .orcamento.contato p {
+      font-size: 18px !important;
+      line-height: 30px; }
+      .orcamento.contato p:nth-of-type(2) {
+        margin-top: 40px !important; }
+    .orcamento.contato .containerSocialIcons {
+      max-width: 200px;
+      margin-top: 10px; }
   .orcamento .container h2 {
     font-size: 24px;
     line-height: 30px;
@@ -745,6 +759,9 @@ footer {
         font-size: 14px;
         line-height: 20px;
         margin-top: 10px; }
+      .orcamento .container .containerCols div.containerInfo p:first-of-type {
+        font-size: 18px;
+        line-height: 30px; }
       .orcamento .container .containerCols div.containerInfo ul {
         margin-top: 10px; }
       .orcamento .container .containerCols div.containerInfo ul li {
@@ -755,9 +772,6 @@ footer {
         padding-left: 10px; }
         .orcamento .container .containerCols div.containerInfo ul li:nth-child(odd) {
           background: #1d1d1d; }
-      .orcamento .container .containerCols div.containerInfo p:first-of-type {
-        font-size: 18px;
-        line-height: 30px; }
 
 .portfolioPage.introduction {
   min-height: 0;
@@ -816,3 +830,26 @@ footer {
         grid-area: image2; }
       .portfolioPageContainer .container img:nth-child(3) {
         grid-area: imageFull; }
+
+.contato.introduction {
+  min-height: 0;
+  height: 155px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background: url("../img/bg-contato.jpg");
+  background-size: cover;
+  background-position: center; }
+  .contato.introduction h1 {
+    font-size: 36px; }
+  .contato.introduction blockquote p {
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal; }
+    .contato.introduction blockquote p:before {
+      margin: 10px auto; }
+    .contato.introduction blockquote p:after {
+      display: none; }

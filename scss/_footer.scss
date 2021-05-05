@@ -1,7 +1,31 @@
+.containerSocialIcons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  a {
+    border: 3px solid var(--color-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: background .25s, filter .25s;
+
+    &:hover {
+      background: var(--color-yellow);
+
+      img {
+        filter: brightness(50);
+      }
+    }
+  }
+}
+
 .footer {
   background: var(--color-black);
   color: var(--color-white);
   padding-bottom: 30px;
+
 
   .container {
     h3 {
@@ -24,30 +48,7 @@
       width: 400px;
     }
 
-    .social {
-      .containerSocialIcons {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
 
-        a {
-          border: 3px solid var(--color-yellow);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 10px;
-          transition: background .25s, filter .25s;
-
-          &:hover {
-            background: var(--color-yellow);
-
-            img {
-              filter: brightness(50);
-            }
-          }
-        }
-      }
-    }
 
     .contato {
       ul li {
