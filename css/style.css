@@ -142,6 +142,7 @@ body {
 
 .container {
   max-width: 960px;
+  width: 90%;
   margin: 0 auto;
   font-size: 14px; }
 
@@ -174,6 +175,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 700px) {
+      header .container {
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px; } }
     header .container nav ul {
       display: grid;
       grid-template-columns: repeat(4, 1fr);

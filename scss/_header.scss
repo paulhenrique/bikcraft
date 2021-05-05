@@ -36,6 +36,12 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 30px;
+    }
+
     nav ul {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
