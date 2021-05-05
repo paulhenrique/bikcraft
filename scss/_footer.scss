@@ -3,6 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 
+
+
   a {
     border: 3px solid var(--color-yellow);
     display: flex;
@@ -28,6 +30,8 @@
 
 
   .container {
+
+
     h3 {
       @include titleText(var(--color-yellow));
       font-size: 18px;
@@ -59,10 +63,22 @@
 
     display:flex;
     justify-content:space-between;
+
+    @media (max-width:700px) {
+      flex-direction: column;
+      width: 400px;
+    }
+
   }
 }
 
 footer {
   background: var(--color-yellow);
   padding: 30px 0;
+
+  @media (max-width:700px) {
+    text-align: center;
+  }
+
+
 }

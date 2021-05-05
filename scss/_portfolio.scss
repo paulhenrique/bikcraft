@@ -18,6 +18,13 @@
         "pictAll pictAll"/ 50% 50%;
       grid-gap: 10px;
 
+      @media (max-width: 700px) {
+        margin-top: 20px;
+        grid-template:
+          "pict1"
+          "pict2"
+          "pictAll"/ 100%;
+      }
 
       img {
         width: 100%;

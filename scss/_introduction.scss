@@ -10,6 +10,8 @@
     width: 100%;
     @include centerColumnFlex;
 
+
+
     h1 {
       font-size: 48px;
       color: var(--color-white);
@@ -17,6 +19,14 @@
       text-transform: uppercase;
     }
 
+    @media (max-width:700px) {
+      text-align: center;
+
+      h1 {
+        font-size: 48px;
+        max-width: 80%;
+      }
+    }
 
   }
 }

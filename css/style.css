@@ -203,6 +203,12 @@ header {
       color: var(--color-white);
       font-weight: bold;
       text-transform: uppercase; }
+    @media (max-width: 700px) {
+      .introduction .container {
+        text-align: center; }
+        .introduction .container h1 {
+          font-size: 48px;
+          max-width: 80%; } }
 
 .btn {
   color: var(--color-yellow);
@@ -249,6 +255,9 @@ header {
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; }
+  @media (max-width: 700px) {
+    .products .container .containerProdutos {
+      grid-template-columns: repeat(1, 1fr); } }
   .products .container .containerProdutos .cardProduto {
     transition: transform .25s, filter .25s; }
     .products .container .containerProdutos .cardProduto a {
@@ -340,6 +349,10 @@ header {
     display: grid;
     grid-template: "pict1 pict2" "pictAll pictAll"/ 50% 50%;
     grid-gap: 10px; }
+    @media (max-width: 700px) {
+      .portfolio .container .containerPictures {
+        margin-top: 20px;
+        grid-template: "pict1" "pict2" "pictAll"/ 100%; } }
     .portfolio .container .containerPictures img {
       width: 100%;
       grid-area: pictAll; }
@@ -383,15 +396,14 @@ header {
       text-align: center; }
       .qualidade .container .containerDif img {
         position: relative; }
-        .qualidade .container .containerDif img:before {
-          content: "";
-          height: 2px;
-          background-color: var(--color-black);
-          width: 50%;
-          position: absolute; }
       .qualidade .container .containerDif .columns {
         display: flex;
         justify-content: space-around; }
+        @media (max-width: 700px) {
+          .qualidade .container .containerDif .columns {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; } }
         .qualidade .container .containerDif .columns div {
           position: relative; }
           .qualidade .container .containerDif .columns div:before {
@@ -404,6 +416,9 @@ header {
             margin: auto; }
           .qualidade .container .containerDif .columns div:nth-child(1):before {
             width: 220px; }
+            @media (max-width: 960px) {
+              .qualidade .container .containerDif .columns div:nth-child(1):before {
+                width: 70%; } }
           .qualidade .container .containerDif .columns div:nth-child(2):before {
             display: none; }
           .qualidade .container .containerDif .columns div:nth-child(2) h3:before {
@@ -412,6 +427,13 @@ header {
           .qualidade .container .containerDif .columns div:nth-child(3):before {
             left: -105px;
             width: 220px; }
+            @media (max-width: 960px) {
+              .qualidade .container .containerDif .columns div:nth-child(3):before {
+                left: -19%;
+                width: 70%; } }
+          @media (max-width: 700px) {
+            .qualidade .container .containerDif .columns div:before {
+              display: none; } }
         .qualidade .container .containerDif .columns h3 {
           font-size: 24px;
           line-height: 30px;
@@ -435,6 +457,9 @@ header {
             height: 110px;
             background: var(--color-black);
             margin: auto; }
+            @media (max-width: 700px) {
+              .qualidade .container .containerDif .columns h3:before {
+                display: none; } }
           .qualidade .container .containerDif .columns h3:after {
             content: "";
             bottom: 0;
@@ -488,6 +513,16 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .institucional .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  @media (max-width: 700px) {
+    .institucional {
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
 
 .containerSocialIcons {
   display: grid;
@@ -547,10 +582,17 @@ blockquote {
     .footer .container .contato ul li {
       margin-bottom: 10px;
       font-family: Georgia, "Times New Roman"; }
+    @media (max-width: 700px) {
+      .footer .container {
+        flex-direction: column;
+        width: 400px; } }
 
 footer {
   background: var(--color-yellow);
   padding: 30px 0; }
+  @media (max-width: 700px) {
+    footer {
+      text-align: center; } }
 
 .sobre.introduction {
   min-height: 0;
