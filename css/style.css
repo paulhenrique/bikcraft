@@ -208,7 +208,9 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .1em;
-  transition: background .25s, color .25s; }
+  transition: background .25s, color .25s;
+  background: transparent;
+  cursor: pointer; }
   .btn:hover {
     background: var(--color-yellow);
     color: var(--color-white); }
@@ -477,8 +479,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 40px; }
+  align-items: center; }
 
 .footer {
   background: var(--color-black);
@@ -672,3 +673,58 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.orcamento {
+  background: black;
+  color: var(--color-yellow);
+  padding-bottom: 40px; }
+  .orcamento .container h2 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: 65px;
+    position: relative;
+    color: var(--color-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; }
+    .orcamento .container h2:after {
+      content: "";
+      bottom: 0;
+      width: 60px;
+      height: 3px;
+      margin: 10px auto;
+      background: var(--color-yellow);
+      margin-bottom: 40px; }
+  .orcamento .container .containerCols {
+    display: grid;
+    grid-template: "col1 col2"/ 40% 45%;
+    gap: 20px; }
+    .orcamento .container .containerCols div.containerForm {
+      grid-area: col1;
+      width: 100%; }
+      .orcamento .container .containerCols div.containerForm fieldset {
+        width: 100%; }
+        .orcamento .container .containerCols div.containerForm fieldset label {
+          font-family: Georgia, "Times New Roman";
+          color: var(--color-white);
+          font-size: 18px; }
+        .orcamento .container .containerCols div.containerForm fieldset input,
+        .orcamento .container .containerCols div.containerForm fieldset textarea {
+          color: white;
+          margin-bottom: 15px;
+          margin-top: 5px;
+          display: block;
+          width: 100%;
+          background: var(--color-black);
+          border: solid 3px var(--color-yellow);
+          padding: 10px 4px; }
+          .orcamento .container .containerCols div.containerForm fieldset input:focus, .orcamento .container .containerCols div.containerForm fieldset input:focus-visible,
+          .orcamento .container .containerCols div.containerForm fieldset textarea:focus,
+          .orcamento .container .containerCols div.containerForm fieldset textarea:focus-visible {
+            outline: 0px; }

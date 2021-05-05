@@ -1,0 +1,50 @@
+.orcamento {
+  background: black;
+  color: var(--color-yellow);
+  padding-bottom: 40px;
+
+  .container {
+    h2 {
+      @include titleText(var(--color-yellow));
+      padding-top: 40px;
+    }
+
+    .containerCols {
+      display: grid;
+      grid-template: "col1 col2"/ 40% 45%;
+      gap: 20px;
+
+      div.containerForm {
+        grid-area: col1;
+        width: 100%;
+
+        fieldset {
+          width: 100%;
+
+          label {
+            font-family: Georgia, "Times New Roman";
+            color: var(--color-white);
+            font-size: 18px;
+          }
+
+          input,
+          textarea {
+            color: white;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            background: var(--color-black);
+            border: solid 3px var(--color-yellow);
+            padding: 10px 4px;
+
+            &:focus,
+            &:focus-visible {
+              outline: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
