@@ -37,6 +37,7 @@
     display: grid;
     grid-template: "image1 image2""imageFull imageFull"/ 45% 45%;
     gap: 10px;
+    justify-content: center;
 
     img {
       width: 100%;

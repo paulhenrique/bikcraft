@@ -806,7 +806,8 @@ footer {
   .portfolioPageContainer .container {
     display: grid;
     grid-template: "image1 image2" "imageFull imageFull"/45% 45%;
-    gap: 10px; }
+    gap: 10px;
+    justify-content: center; }
     .portfolioPageContainer .container img {
       width: 100%; }
       .portfolioPageContainer .container img:nth-child(1) {
