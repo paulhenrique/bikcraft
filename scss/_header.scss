@@ -21,6 +21,10 @@ header {
     }
   }
 
+  ul li {
+    text-align: center;
+  }
+
   .active {
     a {
       color: var(--color-white);
