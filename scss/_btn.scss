@@ -9,6 +9,8 @@
   font-weight: bold;
   letter-spacing: .1em;
   transition: background .25s, color .25s;
+  background: transparent;
+  cursor: pointer;
 
   &:hover {
     background: var(--color-yellow);
