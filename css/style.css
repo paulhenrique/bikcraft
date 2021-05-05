@@ -622,8 +622,18 @@ footer {
 
 .historia .container {
   display: grid;
-  grid-template: "text text" "image image"/50% 50%;
-  gap: 40px; }
+  grid-template: "text1" "text2" "image"/100%;
+  gap: 5%; }
+  @media (max-width: 700px) {
+    .historia .container {
+      grid-template: "text1" "text2" "image"/100%;
+      padding-bottom: 60px; } }
+  @media (max-width: 700px) {
+    .historia .container .containerValores {
+      grid-area: text2; } }
+  @media (max-width: 700px) {
+    .historia .container .containerHistoria {
+      grid-area: text1; } }
   .historia .container .containerHistoria h2,
   .historia .container .containerValores h2 {
     font-size: 24px;
@@ -664,7 +674,8 @@ footer {
     line-height: 25px;
     margin-top: 20px; }
   .historia .container img {
-    grid-area: image; }
+    grid-area: image;
+    width: 100%; }
 
 .produtos.introduction {
   min-height: 0;
