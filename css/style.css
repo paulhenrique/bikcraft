@@ -704,7 +704,7 @@ footer {
   .orcamento .container .containerCols {
     display: grid;
     grid-template: "col1 col2"/ 40% 45%;
-    gap: 20px; }
+    gap: 10%; }
     .orcamento .container .containerCols div.containerForm {
       grid-area: col1;
       width: 100%; }
@@ -728,3 +728,31 @@ footer {
           .orcamento .container .containerCols div.containerForm fieldset textarea:focus,
           .orcamento .container .containerCols div.containerForm fieldset textarea:focus-visible {
             outline: 0px; }
+    .orcamento .container .containerCols div.containerInfo {
+      grid-area: col2;
+      color: var(--color-white); }
+      .orcamento .container .containerCols div.containerInfo h3 {
+        color: var(--color-yellow);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        text-transform: uppercase; }
+        .orcamento .container .containerCols div.containerInfo h3:nth-of-type(2) {
+          margin-top: 40px; }
+      .orcamento .container .containerCols div.containerInfo p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px; }
+      .orcamento .container .containerCols div.containerInfo ul {
+        margin-top: 10px; }
+      .orcamento .container .containerCols div.containerInfo ul li {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px; }
+        .orcamento .container .containerCols div.containerInfo ul li:nth-child(odd) {
+          background: #1d1d1d; }
+      .orcamento .container .containerCols div.containerInfo p:first-of-type {
+        font-size: 18px;
+        line-height: 30px; }
