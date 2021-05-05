@@ -633,3 +633,42 @@ footer {
       margin: 10px auto; }
     .produtos.introduction blockquote p:after {
       display: none; }
+
+.produtos .container .row {
+  margin-top: 30px;
+  display: grid;
+  grid-template: "col1 col2" "col3 col4"/66% 30%;
+  gap: 30px; }
+  .produtos .container .row a img {
+    max-width: 100%; }
+  .produtos .container .row a:nth-child(1) {
+    grid-area: col1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .produtos .container .row a:nth-child(1) img {
+      height: 100%; }
+    .produtos .container .row a:nth-child(1) h2 {
+      color: white;
+      position: absolute;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column; }
+      .produtos .container .row a:nth-child(1) h2:after, .produtos .container .row a:nth-child(1) h2:before {
+        content: "";
+        bottom: 0;
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
+        background: var(--color-white);
+        margin-bottom: 40px; }
+      .produtos .container .row a:nth-child(1) h2:before {
+        margin-bottom: 10px !important; }
+  .produtos .container .row a:nth-child(2) {
+    grid-area: col2;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
