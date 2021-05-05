@@ -1,34 +1,6 @@
 .sobre {
   &.introduction {
-    min-height: 0;
-    height: 155px;
-    padding-top: 0;
-    @include centerColumnFlex;
-    align-items: center;
-
-    background: url(../img/bg-sobre.jpg);
-    background-size: cover;
-    background-position: center;
-
-    h1 {
-      font-size: 36px;
-    }
-
-    blockquote {
-      p {
-        font-weight: normal;
-        text-decoration: none;
-        font-style: normal;
-
-        &:before {
-          margin: 10px auto;
-        }
-
-        &:after {
-          display: none;
-        }
-      }
-    }
+    @include Introduction('../img/bg-sobre.jpg');
   }
 }
 

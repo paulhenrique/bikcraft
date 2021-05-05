@@ -551,7 +551,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-items: center;
-  background: url(../img/bg-sobre.jpg);
+  background: url("../img/bg-sobre.jpg");
   background-size: cover;
   background-position: center; }
   .sobre.introduction h1 {
@@ -610,3 +610,26 @@ footer {
     margin-top: 20px; }
   .historia .container img {
     grid-area: image; }
+
+.produtos.introduction {
+  min-height: 0;
+  height: 155px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background: url("../img/bg-produtos.jpg");
+  background-size: cover;
+  background-position: center; }
+  .produtos.introduction h1 {
+    font-size: 36px; }
+  .produtos.introduction blockquote p {
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal; }
+    .produtos.introduction blockquote p:before {
+      margin: 10px auto; }
+    .produtos.introduction blockquote p:after {
+      display: none; }
