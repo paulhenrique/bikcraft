@@ -342,105 +342,107 @@ header {
       .portfolio .container .containerPictures img:nth-child(2) {
         grid-area: pict2; }
 
-.qualidade .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .qualidade .container h2 {
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-align: center;
-    margin-top: 65px;
-    position: relative;
-    color: var(--color-black);
+.qualidade {
+  padding-bottom: 40px; }
+  .qualidade .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .qualidade .container h2:after {
-      content: "";
-      bottom: 0;
-      width: 60px;
-      height: 3px;
-      margin: 10px auto;
-      background: var(--color-black);
-      margin-bottom: 40px; }
-  .qualidade .container .containerDif {
-    width: 100%;
-    text-align: center; }
-    .qualidade .container .containerDif img {
-      position: relative; }
-      .qualidade .container .containerDif img:before {
-        content: "";
-        height: 2px;
-        background-color: var(--color-black);
-        width: 50%;
-        position: absolute; }
-    .qualidade .container .containerDif .columns {
+    .qualidade .container h2 {
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-align: center;
+      margin-top: 65px;
+      position: relative;
+      color: var(--color-black);
       display: flex;
-      justify-content: space-around; }
-      .qualidade .container .containerDif .columns div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .qualidade .container h2:after {
+        content: "";
+        bottom: 0;
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
+        background: var(--color-black);
+        margin-bottom: 40px; }
+    .qualidade .container .containerDif {
+      width: 100%;
+      text-align: center; }
+      .qualidade .container .containerDif img {
         position: relative; }
-        .qualidade .container .containerDif .columns div:before {
+        .qualidade .container .containerDif img:before {
           content: "";
-          position: absolute;
-          top: -64px;
-          width: 220px;
-          height: 3px;
-          background: var(--color-black);
-          margin: auto; }
-        .qualidade .container .containerDif .columns div:nth-child(1):before {
-          width: 220px; }
-        .qualidade .container .containerDif .columns div:nth-child(2):before {
-          display: none; }
-        .qualidade .container .containerDif .columns div:nth-child(2) h3:before {
-          top: -68px;
-          height: 60px; }
-        .qualidade .container .containerDif .columns div:nth-child(3):before {
-          left: -105px;
-          width: 220px; }
-      .qualidade .container .containerDif .columns h3 {
-        font-size: 24px;
-        line-height: 30px;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: .1em;
-        text-align: center;
-        margin-top: 65px;
-        position: relative;
-        color: var(--color-black);
+          height: 2px;
+          background-color: var(--color-black);
+          width: 50%;
+          position: absolute; }
+      .qualidade .container .containerDif .columns {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px; }
-        .qualidade .container .containerDif .columns h3:before {
-          content: "";
-          position: absolute;
-          top: -128px;
-          width: 3px;
-          height: 110px;
-          background: var(--color-black);
-          margin: auto; }
-        .qualidade .container .containerDif .columns h3:after {
-          content: "";
-          bottom: 0;
-          width: 60px;
-          height: 3px;
-          margin: 10px auto;
-          background: var(--color-black);
-          margin-bottom: 40px; }
-        .qualidade .container .containerDif .columns h3:after {
-          margin-bottom: 10px; }
-      .qualidade .container .containerDif .columns p {
-        max-width: 230px;
-        font-size: 14px;
-        line-height: 20px; }
+        justify-content: space-around; }
+        .qualidade .container .containerDif .columns div {
+          position: relative; }
+          .qualidade .container .containerDif .columns div:before {
+            content: "";
+            position: absolute;
+            top: -64px;
+            width: 220px;
+            height: 3px;
+            background: var(--color-black);
+            margin: auto; }
+          .qualidade .container .containerDif .columns div:nth-child(1):before {
+            width: 220px; }
+          .qualidade .container .containerDif .columns div:nth-child(2):before {
+            display: none; }
+          .qualidade .container .containerDif .columns div:nth-child(2) h3:before {
+            top: -68px;
+            height: 60px; }
+          .qualidade .container .containerDif .columns div:nth-child(3):before {
+            left: -105px;
+            width: 220px; }
+        .qualidade .container .containerDif .columns h3 {
+          font-size: 24px;
+          line-height: 30px;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: .1em;
+          text-align: center;
+          margin-top: 65px;
+          position: relative;
+          color: var(--color-black);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px; }
+          .qualidade .container .containerDif .columns h3:before {
+            content: "";
+            position: absolute;
+            top: -128px;
+            width: 3px;
+            height: 110px;
+            background: var(--color-black);
+            margin: auto; }
+          .qualidade .container .containerDif .columns h3:after {
+            content: "";
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            margin: 10px auto;
+            background: var(--color-black);
+            margin-bottom: 40px; }
+          .qualidade .container .containerDif .columns h3:after {
+            margin-bottom: 10px; }
+        .qualidade .container .containerDif .columns p {
+          max-width: 230px;
+          font-size: 14px;
+          line-height: 20px; }
 
 blockquote {
   width: 360px;
