@@ -37,6 +37,12 @@
       grid-template: "col1 col2"/ 40% 45%;
       gap: 10%;
 
+      @media (max-width: 700px) {
+        width: 100%;
+        grid-template: "col1""col2"/ 100% 100%;
+
+      }
+
       div.containerForm {
         grid-area: col1;
         width: 100%;
@@ -69,9 +75,15 @@
         }
       }
 
+      @media (max-width: 700px) {
+        padding-bottom: 100px;
+      }
+
       div.containerInfo {
         grid-area: col2;
         color: var(--color-white);
+        background: var(--color-black);
+
 
         h3 {
           color: var(--color-yellow);
@@ -99,6 +111,7 @@
 
         ul {
           margin-top: 10px;
+          background-color: var(--color-black);
         }
 
         ul li {

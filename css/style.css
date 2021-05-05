@@ -706,8 +706,11 @@ footer {
 .produtos .container .row {
   margin-top: 30px;
   display: grid;
-  grid-template: "col1 col2" "col3 col4"/66% 30%;
+  grid-template: "col1 col2"/ 66% 30%;
   gap: 30px; }
+  @media (max-width: 768px) {
+    .produtos .container .row {
+      grid-template: "col1" "col2"/100% 100%; } }
   .produtos .container .row a img {
     max-width: 100%; }
   .produtos .container .row a:nth-child(1) {
@@ -786,6 +789,10 @@ footer {
     display: grid;
     grid-template: "col1 col2"/ 40% 45%;
     gap: 10%; }
+    @media (max-width: 700px) {
+      .orcamento .container .containerCols {
+        width: 100%;
+        grid-template: "col1" "col2"/100% 100%; } }
     .orcamento .container .containerCols div.containerForm {
       grid-area: col1;
       width: 100%; }
@@ -809,9 +816,13 @@ footer {
           .orcamento .container .containerCols div.containerForm fieldset textarea:focus,
           .orcamento .container .containerCols div.containerForm fieldset textarea:focus-visible {
             outline: 0px; }
+    @media (max-width: 700px) {
+      .orcamento .container .containerCols {
+        padding-bottom: 100px; } }
     .orcamento .container .containerCols div.containerInfo {
       grid-area: col2;
-      color: var(--color-white); }
+      color: var(--color-white);
+      background: var(--color-black); }
       .orcamento .container .containerCols div.containerInfo h3 {
         color: var(--color-yellow);
         font-size: 18px;
@@ -828,7 +839,8 @@ footer {
         font-size: 18px;
         line-height: 30px; }
       .orcamento .container .containerCols div.containerInfo ul {
-        margin-top: 10px; }
+        margin-top: 10px;
+        background-color: var(--color-black); }
       .orcamento .container .containerCols div.containerInfo ul li {
         font-family: Georgia, "Times New Roman", Times, serif;
         min-height: 36px;

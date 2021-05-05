@@ -9,9 +9,13 @@
     .row {
       margin-top: 30px;
       display: grid;
-      grid-template: "col1 col2""col3 col4"/ 66% 30%;
+      grid-template: "col1 col2"/ 66% 30%;
       gap: 30px;
 
+      @media (max-width: 768px) {
+        grid-template: "col1""col2"/ 100% 100%;
+
+      }
 
       a img {
         max-width: 100%;
