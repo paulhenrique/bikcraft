@@ -756,3 +756,42 @@ footer {
       .orcamento .container .containerCols div.containerInfo p:first-of-type {
         font-size: 18px;
         line-height: 30px; }
+
+.portfolioPage.introduction {
+  min-height: 0;
+  height: 155px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background: url("../img/bg-portfolio.jpg");
+  background-size: cover;
+  background-position: center; }
+  .portfolioPage.introduction h1 {
+    font-size: 36px; }
+  .portfolioPage.introduction blockquote p {
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal; }
+    .portfolioPage.introduction blockquote p:before {
+      margin: 10px auto; }
+    .portfolioPage.introduction blockquote p:after {
+      display: none; }
+
+.portfolioPageContainer {
+  background: black;
+  padding: 40px 0; }
+  .portfolioPageContainer .container {
+    display: grid;
+    grid-template: "image1 image2" "imageFull imageFull"/45% 45%;
+    gap: 10px; }
+    .portfolioPageContainer .container img {
+      width: 100%; }
+      .portfolioPageContainer .container img:nth-child(1) {
+        grid-area: image1; }
+      .portfolioPageContainer .container img:nth-child(2) {
+        grid-area: image2; }
+      .portfolioPageContainer .container img:nth-child(3) {
+        grid-area: imageFull; }

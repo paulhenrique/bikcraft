@@ -1,0 +1,32 @@
+.portfolioPage {
+  &.introduction {
+    @include Introduction('../img/bg-portfolio.jpg');
+  }
+}
+
+.portfolioPageContainer {
+  background: black;
+  padding: 40px 0;
+
+  .container {
+    display: grid;
+    grid-template: "image1 image2""imageFull imageFull"/ 45% 45%;
+    gap: 10px;
+
+    img {
+      width: 100%;
+
+      &:nth-child(1) {
+        grid-area: image1;
+      }
+
+      &:nth-child(2) {
+        grid-area: image2;
+      }
+
+      &:nth-child(3) {
+        grid-area: imageFull;
+      }
+    }
+  }
+}
