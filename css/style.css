@@ -780,6 +780,24 @@ footer {
     .portfolioPage.introduction blockquote p:after {
       display: none; }
 
+.portfolioPageHead {
+  padding: 60px 0 60px 0;
+  display: flex;
+  justify-content: center; }
+  .portfolioPageHead .container p {
+    font-style: italic;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    position: relative; }
+    .portfolioPageHead .container p cite {
+      position: absolute;
+      font-style: normal;
+      bottom: -30px;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif; }
+
 .portfolioPageContainer {
   background: black;
   padding: 40px 0; }
